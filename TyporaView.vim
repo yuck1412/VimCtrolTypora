@@ -20,9 +20,9 @@ endfunction
 
 " 修改 DLL 路径
 if has('gui_win32') && has('num64')
-    let typoraViewDll =  $MyLibPath.'/TyporaView/ControlTyporaView.x64.dll'
+    let typoraViewDll = 'D:\vimPlug\VimCtrolTypora\ControlTyporaView.x64.dll'
 elseif has('gui_win32')
-    let typoraViewDll =  $MyLibPath.'/TyporaView/ControlTyporaView.x64.dll'
+    let typoraViewDll = 'D:\vimPlug\VimCtrolTypora\ControlTyporaView.x86.dll'
 endif
 
 let FunStep = 1

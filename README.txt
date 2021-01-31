@@ -7,7 +7,7 @@
    Alt-k 鼠标上滚 1个step
    Alt-j 鼠标下滚 1个step
 
-3. 个人vimrc 添加 source  D:\vimPlug\TyporaView\TyporaView.vim  
+3. 个人vimrc 添加 source  D:\vimPlug\VimCtrolTypora\TyporaView.vim  
    替换成自己的路径,我自己的插件都喜欢直接source
 
 4. 用 gvim 和 Typora 打开同一个 .md 文件, gvim 编辑完保存时 Typora会刷新
