@@ -18,11 +18,12 @@ function! TyporaView(pos,step)
 " }}}
 endfunction
 
-" 修改 DLL 路径
+" 如果当前 .vim 和 DLL 同路径不用修改,否则需要修改
+let sFileP = fnamemodify( expand('<sfile>') , ':p:h')
 if has('gui_win32') && has('num64')
-    let typoraViewDll = 'D:\vimPlug\VimCtrolTypora\ControlTyporaView.x64.dll'
+    let typoraViewDll = sFileP.'\ControlTyporaView.x64.dll'
 elseif has('gui_win32')
-    let typoraViewDll = 'D:\vimPlug\VimCtrolTypora\ControlTyporaView.x86.dll'
+    let typoraViewDll = sFileP.'\ControlTyporaView.x86.dll'
 endif
 
 let FunStep = 1
